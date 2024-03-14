@@ -1,5 +1,4 @@
 import './App.css';
-// import Header from '../src/components/Header';
 import DashBoardPage from './pages/DashboardPage/DashboardPage';
 import ProfilePage from './pages/ProfilePage/ProfilePage';
 import PublicProfilePage from './pages/PublicProfilePage/PublicProfilePage';
