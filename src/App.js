@@ -1,10 +1,13 @@
-import logo from './logo.svg';
 import './App.css';
+import DashBoardPage from './Pages/DashboardPage/DashboardPage';
+import ProfilePage from './Pages/ProfilePage/ProfilePage';
+import PublicProfilePage from './Pages/PublicProfilePage/PublicProfilePage';
+import {BrowserRouter, Routes, Route} from "react-router-dom";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
+      {/* <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
           Edit <code>src/App.js</code> and save to reload.
@@ -17,7 +20,14 @@ function App() {
         >
           Learn React
         </a>
-      </header>
+      </header> */}
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<DashBoardPage/>}/>
+          <Route path="/" element={<ProfilePage/>}/>
+          <Route path="/" element={<PublicProfilePage/>}/>
+        </Routes>
+      </BrowserRouter>
     </div>
   );
 }
